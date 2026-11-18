@@ -3,8 +3,6 @@ from random import randint
 import datetime
 from PIL import Image
 def my_box_blur(img, radius):
-    if radius < 1:
-        return img.copy()
     width, height = img.size
     # Создаем пустое изображение для результата
     result = Image.new("RGB", (width, height))
